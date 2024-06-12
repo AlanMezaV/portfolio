@@ -4,48 +4,53 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta
+			name="description"
+			content="I´m Alan Meza a soffware developer specialized in web technologies"
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="author" content="Alan Meza" />
+		<meta name="keywords" content="Alan Meza Valenzuela, software developer, web technologies" />
+		<meta
+			property="og:title"
+			content="Alan Meza | Software developer specialized in web technologies"
+		/>
+		<meta
+			property="og:description"
+			content="I´m Alan Meza a soffware developer specialized in web technologies"
+		/>
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class="bg-view p-5 max-w-[1200px] lg:mx-auto flex flex-col gap-52">
+		<div>
+			<Header />
+			<main>
+				<slot />
+			</main>
+		</div>
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		font-family: 'Inter', sans-serif;
+		background: #0c0c0c;
+		color-scheme: light dark;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	.gray-text {
+		color: #727272;
+	}
+	.fade-text {
+		background: linear-gradient(100deg, rgba(79, 195, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+		color: transparent;
+		-webkit-background-clip: text;
 	}
 </style>
