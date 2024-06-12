@@ -4,7 +4,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import Header from '../components/Header.astro';
 ---
 
 <!doctype html>
@@ -31,12 +30,7 @@ import Header from '../components/Header.astro';
 		<title>{title}</title>
 	</head>
 	<body class="bg-view p-5 max-w-[1200px] lg:mx-auto flex flex-col gap-52">
-		<div>
-			<Header />
-			<main>
-				<slot />
-			</main>
-		</div>
+		<slot />
 	</body>
 </html>
 <style is:global>
@@ -52,5 +46,8 @@ import Header from '../components/Header.astro';
 		background: linear-gradient(100deg, rgba(79, 195, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
 		color: transparent;
 		-webkit-background-clip: text;
+	}
+	.text-white:hover {
+		filter: brightness(70%);
 	}
 </style>

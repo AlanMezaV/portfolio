@@ -1,10 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 import Home from '../components/Home.astro';
+import Experience from '../components/Experience.astro';
 ---
 
 <Layout title="Alan Meza | Software developer specialized in web technologies">
-	<Home />
+	<div class="flex flex-col gap-40">
+		<Header />
+		<Home />
+		<Experience />
+	</div>
 </Layout>
 
 <style></style>
