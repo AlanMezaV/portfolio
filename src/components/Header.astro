@@ -2,16 +2,22 @@
 
 ---
 
-<header class="flex justify-between items-center h-[50px]">
+<header
+	class="flex justify-between items-center h-[50px] fixed top-0 w-full z-50 left-0 lg:px-40 px-0 py-8"
+>
 	<div>
 		<img src="/logo.svg" alt="Glasses Logo" class="h-auto" />
 	</div>
-	<nav class={` lg:flex flex-row items-center justify-between text-center gap-16 hidden`}>
-		<a href="/" class="text-white"> Home </a>
-		<a href="/experience" class="text-white"> Experience </a>
-		<a href="/projects" class="text-white"> Projects </a>
-		<a href="/about" class="text-white"> About me </a>
+	<nav class="lg:flex flex-row items-center justify-between text-center gap-16 hidden">
+		<a href="#home" class="text-white"> Home </a>
+		<a href="#experience" class="text-white"> Experience </a>
+		<a href="#projects" class="text-white"> Projects </a>
+		<a href="#about" class="text-white"> About me </a>
 	</nav>
 </header>
 
-<style></style>
+<style>
+	header {
+		background: #0c0c0c;
+	}
+</style>
