@@ -38,7 +38,9 @@ const { title } = Astro.props;
 		font-family: 'Inter', sans-serif;
 		background: #0c0c0c;
 		color-scheme: light dark;
+		scroll-behavior: smooth;
 	}
+
 	.gray-text {
 		color: #727272;
 	}
@@ -46,8 +48,5 @@ const { title } = Astro.props;
 		background: linear-gradient(100deg, rgba(79, 195, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
 		color: transparent;
 		-webkit-background-clip: text;
-	}
-	.text-white:hover {
-		filter: brightness(70%);
 	}
 </style>
