@@ -1,5 +1,8 @@
 ---
-
+import { LanguageDropdown } from './LanguajeDropdown/LanguageDropdown.jsx';
+import { geti18n } from '../i18n';
+let { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
 ---
 
 <header
@@ -9,11 +12,14 @@
 		<img src="/logo.svg" alt="Glasses Logo" class="h-auto" />
 	</div>
 	<nav class="lg:flex flex-row items-center justify-between text-center gap-16 hidden">
-		<a href="#home" class="text-white"> Home </a>
-		<a href="#experience" class="text-white"> Experience </a>
-		<a href="#projects" class="text-white"> Projects </a>
-		<a href="#about" class="text-white"> About me </a>
+		<a href="#home" class="text-white"> {i18n.HEADER_HOME} </a>
+		<a href="#experience" class="text-white"> {i18n.HEADER_EXPERIENCE} </a>
+		<a href="#projects" class="text-white"> {i18n.HEADER_PROJECTS} </a>
+		<a href="#about" class="text-white"> {i18n.HEADER_ABOUT_ME} </a>
 	</nav>
+	<div class="lg:mr-0 mr-2">
+		<LanguageDropdown client:load language={currentLocale} />
+	</div>
 </header>
 
 <style>

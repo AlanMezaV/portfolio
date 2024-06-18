@@ -1,35 +1,35 @@
 ---
-
+import { geti18n } from '../i18n';
+const { currentLocale } = Astro;
+const i18n = geti18n({ currentLocale });
 ---
 
 <section id="home" class="lg:px-40 px-1 pt-[100px]">
 	<div class="flex flex-col items-center h-full gap-5 justify-center w-auto">
 		<strong class="gray-text font-medium">Alan Meza Valenzuela</strong>
-		<h1 class="font-bold fade-text text-7xl text-center">Web developer</h1>
+		<h1 class="font-bold fade-text lg:text-7xl text-5xl text-center">{i18n.HOME_TITLE}</h1>
 		<div>
 			<p class="text-xl text-center text-white">
-				I specialize in creating innovative, user-friendly, and intuitive websites that solve
-				problems and enhance user experience. I combine creativity and technology to deliver
-				effective and attractive solutions.
+				{i18n.HOME_DESCRIPTION}
 			</p>
 		</div>
 		<div class="flex flex-row gap-8">
 			<a href="https://github.com/AlanMezaV" title="Github" target="_blank">
-				<img src="/github.svg" alt="Github logo" class="w-8 h-8 github" />
+				<img src="/github.svg" alt="Github logo" class="size-8 github" />
 			</a>
 			<a
 				href="https://www.linkedin.com/in/alan-meza-valenzuela-83a871226/"
 				title="Linkedin"
 				target="_blank"
 			>
-				<img src="/linkedin.svg" alt="Linkedin logo" class="w-8 h-8 linkedin" />
+				<img src="/linkedin.svg" alt="Linkedin logo" class="size-8 linkedin" />
 			</a>
 		</div>
-		<a href="/AlanMezaValenzuela-CV.pdf" target="_blank">
+		<a href={i18n.HOME_DOWNLOAD_CV_PATH} target="_blank">
 			<button class="cv_button">
 				<div class="flex flex-row gap-2 items-center px-3">
 					<img src="/cv.svg" alt="Download CV" />
-					<span class="font-semibold text-xl text-white">Download CV</span>
+					<span class="font-semibold text-xl text-white">{i18n.HOME_DOWNLOAD_CV}</span>
 				</div>
 			</button>
 		</a>

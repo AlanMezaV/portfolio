@@ -1,32 +1,27 @@
 ---
 interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="description"
-			content="I´m Alan Meza a soffware developer specialized in web technologies"
-		/>
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="author" content="Alan Meza" />
-		<meta name="keywords" content="Alan Meza Valenzuela, software developer, web technologies" />
 		<meta
-			property="og:title"
-			content="Alan Meza | Software developer specialized in web technologies"
+			name="keywords"
+			content="Alan Meza Valenzuela, software developer, web technologies, Alan Meza, Front-end developer, Back-end developer, Desarrollador front-end, Desarrollador back-end, Desarrollador web"
 		/>
-		<meta
-			property="og:description"
-			content="I´m Alan Meza a soffware developer specialized in web technologies"
-		/>
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
 		<title>{title}</title>
 	</head>
 	<body class="bg-view p-5 max-w-[1200px] lg:mx-auto flex flex-col gap-52">
