@@ -50,13 +50,11 @@ export function LanguageDropdown({ language }) {
       </button>
       {isOpen && (
         <div className={`dropdown-body ${isHovered ? 'dropdown-body-hover' : ''}`}>
-          <div className="dropdown-body-scroll">
-            <div className="dropdown-body-content">
-              <a href="/">ES</a>
-            </div>
-            <div className="dropdown-body-content">
-              <a href="/en">EN</a>
-            </div>
+          <div className="dropdown-body-content">
+            <a href="/">ES</a>
+          </div>
+          <div className="dropdown-body-content">
+            <a href="/en">EN</a>
           </div>
         </div>
       )}

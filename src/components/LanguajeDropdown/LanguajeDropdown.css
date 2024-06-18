@@ -4,7 +4,7 @@
 
 .select-dropdown {
   background-color: #0c0c0c;
-  width: 60px;
+  width: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,20 +13,20 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  gap: 4px;
 }
 
 .dropdown-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #151515;
-  padding: 10px 0px 10px 10px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: fit-content;
   z-index: 1000;
   margin-top: 5px;
 }
