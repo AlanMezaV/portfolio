@@ -5,74 +5,118 @@ const i18n = geti18n({ currentLocale });
 ---
 
 <section id="experience" class="flex flex-col gap-8 lg:px-40 px-1 pt-[100px]">
-	<div class="flex flex-col gap-3">
-		<h2 class="font-semibold text-center capitalize text-5xl text-white">
-			{i18n.EXPERIENCE_TITLE}
-		</h2>
-		<h3 class="font-semibold text-center fade-text">{i18n.EXPERIENCE_SUBTITLE}</h3>
-	</div>
-	<div class="flex gap-2 justify-center">
-		<div class="flex flex-col items-center lg:mt-1 mt-2">
-			<div class="w-4 h-[16px] rounded-full border-2 border-neutral-1"></div>
-		</div>
-		<div class="flex flex-col gap-2 max-w-[700px]">
-			<div class="flex flex-col gap-1">
-				<p class="font-semibold text-xl text-white">
-					{i18n.SECOND_EXPERIENCE_TITLE}
-				</p>
-				<p class="gray-text font-semibold text-white">{i18n.SECOND_EXPERIENCE_DATE}</p>
-			</div>
-			<div class="flex flex-col gap-3">
-				<p class="text-xl text-white">
-					{i18n.SECOND_EXPERIENCE_DESCRIPTION}
-				</p>
-				<div class="flex flex-wrap gap-4">
-					<div
-						class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
-						style="background:rgba(19, 80, 202, 0.249)"
-					>
-						<span style="color: #1175f0">Wordpress</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="flex gap-2 justify-center">
-		<div class="flex flex-col items-center lg:mt-1 mt-2">
-			<div class="w-4 h-[16px] rounded-full border-2 border-neutral-1"></div>
-		</div>
-		<div class="flex flex-col gap-2 max-w-[700px]">
-			<div class="flex flex-col gap-1">
-				<p class="font-semibold text-xl text-white">
-					{i18n.FIRST_EXPERIENCE_TITLE}
-				</p>
-				<p class="gray-text font-semibold text-white">{i18n.FIRST_EXPERIENCE_DATE}</p>
-			</div>
-			<div class="flex flex-col gap-3">
-				<p class="text-xl text-white">
-					{i18n.FIRST_EXPERIENCE_DESCRIPTION}
-				</p>
-				<div class="flex flex-wrap gap-4">
-					<div
-						class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
-						style="background:rgba(19, 159, 202, 0.249)"
-					>
-						<span style="color: #139ECA">React</span>
-					</div>
-					<div
-						class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
-						style="background: rgba(239, 214, 29, 0.253)"
-					>
-						<span style="color: #EFD81D">JavaScript</span>
-					</div>
-					<div
-						class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
-						style="background: rgba(118, 74, 188, 0.244)"
-					>
-						<span style="color: #764ABC">Bootstrap</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="flex flex-col gap-3">
+    <h2 class="font-semibold text-center capitalize text-5xl text-white">
+      {i18n.EXPERIENCE_TITLE}
+    </h2>
+    <h3 class="font-semibold text-center fade-text">{i18n.EXPERIENCE_SUBTITLE}</h3>
+  </div>
+  <div class="flex gap-2 justify-center">
+    <div class="flex flex-col items-center lg:mt-1 mt-2">
+      <div class="w-4 h-[16px] rounded-full border-2 border-neutral-1"></div>
+    </div>
+    <div class="flex flex-col gap-2 max-w-[700px]">
+      <div class="flex flex-col gap-1">
+        <p class="font-semibold text-xl text-white">
+          {i18n.THIRD_EXPERIENCE_TITLE}
+        </p>
+        <p class="gray-text font-semibold text-white">{i18n.THIRD_EXPERIENCE_DATE}</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="text-xl text-white">
+          {i18n.THIRD_EXPERIENCE_DESCRIPTION}
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <div
+            class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
+            style="background:rgba(202, 19, 19, 0.249)"
+          >
+            <span style="color: #ca2b13">Angular</span>
+          </div>
+          <div
+            class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
+            style="background:rgba(19, 56, 202, 0.249)"
+          >
+            <span style="color: #1175f0">Typescript</span>
+          </div>
+          <div
+            class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
+            style="background: rgba(104, 188, 74, 0.244)"
+          >
+            <span style="color: #76bc4a">NodeJs</span>
+          </div>
+          <div
+            class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
+            style="background: rgba(74, 188, 177, 0.244)"
+          >
+            <span style="color: #4abcb2">Flask</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex gap-2 justify-center">
+    <div class="flex flex-col items-center lg:mt-1 mt-2">
+      <div class="w-4 h-[16px] rounded-full border-2 border-neutral-1"></div>
+    </div>
+    <div class="flex flex-col gap-2 max-w-[700px]">
+      <div class="flex flex-col gap-1">
+        <p class="font-semibold text-xl text-white">
+          {i18n.SECOND_EXPERIENCE_TITLE}
+        </p>
+        <p class="gray-text font-semibold text-white">{i18n.SECOND_EXPERIENCE_DATE}</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="text-xl text-white">
+          {i18n.SECOND_EXPERIENCE_DESCRIPTION}
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <div
+            class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
+            style="background:rgba(19, 80, 202, 0.249)"
+          >
+            <span style="color: #1175f0">Wordpress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex gap-2 justify-center">
+    <div class="flex flex-col items-center lg:mt-1 mt-2">
+      <div class="w-4 h-[16px] rounded-full border-2 border-neutral-1"></div>
+    </div>
+    <div class="flex flex-col gap-2 max-w-[700px]">
+      <div class="flex flex-col gap-1">
+        <p class="font-semibold text-xl text-white">
+          {i18n.FIRST_EXPERIENCE_TITLE}
+        </p>
+        <p class="gray-text font-semibold text-white">{i18n.FIRST_EXPERIENCE_DATE}</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <p class="text-xl text-white">
+          {i18n.FIRST_EXPERIENCE_DESCRIPTION}
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <div
+            class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
+            style="background:rgba(19, 159, 202, 0.249)"
+          >
+            <span style="color: #139ECA">React</span>
+          </div>
+          <div
+            class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
+            style="background: rgba(239, 214, 29, 0.253)"
+          >
+            <span style="color: #EFD81D">JavaScript</span>
+          </div>
+          <div
+            class="flex justify-center rounded-full py-1 px-2 w-fit text-sm"
+            style="background: rgba(118, 74, 188, 0.244)"
+          >
+            <span style="color: #764ABC">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
