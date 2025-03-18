@@ -6,28 +6,28 @@ const i18n = geti18n({ currentLocale });
 ---
 
 <section id="projects" class="flex flex-col gap-10 lg:px-10 px-1 pt-[100px]">
-	<div class="flex flex-col gap-3">
-		<h2 class="font-semibold text-center capitalize text-5xl text-white">{i18n.PROJECTS_TITLE}</h2>
-		<h3 class="font-semibold text-center fade-text">{i18n.PROJECTS_SUBTITLE}</h3>
-	</div>
-	<div class="flex flex-col gap-14 lg:gap-24 lg:grid grid-cols-2">
-		<ProjectItem
-			title={i18n.FIRST_PROJECT_TITLE}
-			description={i18n.FIRST_PROJECT_DESCRIPTION}
-			image="/IncidentManagement.png"
-			link="https://incident-deploy.vercel.app/"
-		/>
-		<ProjectItem
-			title={i18n.SECOND_PROJECT_TITLE}
-			description={i18n.SECOND_PROJECT_DESCRIPTION}
-			image="/SimpleRestaurant.png"
-			link="https://simplerestaurant.vercel.app/"
-		/>
-		<ProjectItem
-			title={i18n.THIRD_PROJECT_TITLE}
-			description={i18n.THIRD_PROJECT_DESCRIPTION}
-			image="/Simtec.png"
-			link=""
-		/>
-	</div>
+  <div class="flex flex-col gap-3">
+    <h2 class="font-semibold text-center capitalize text-5xl text-white">{i18n.PROJECTS_TITLE}</h2>
+    <h3 class="font-semibold text-center fade-text">{i18n.PROJECTS_SUBTITLE}</h3>
+  </div>
+  <div class="flex flex-col gap-14 lg:gap-24 lg:grid grid-cols-2">
+    <ProjectItem
+      title={i18n.FIRST_PROJECT_TITLE}
+      description={i18n.FIRST_PROJECT_DESCRIPTION}
+      image="/IncidentManagement.png"
+      link="https://incident-deploy.vercel.app/"
+    />
+    <ProjectItem
+      title={i18n.SECOND_PROJECT_TITLE}
+      description={i18n.SECOND_PROJECT_DESCRIPTION}
+      image="/SimpleRestaurant.png"
+      link="https://github.com/AlanMezaV/SimpleRestaurant"
+    />
+    <ProjectItem
+      title={i18n.THIRD_PROJECT_TITLE}
+      description={i18n.THIRD_PROJECT_DESCRIPTION}
+      image="/Simtec.png"
+      link="https://github.com/AlanMezaV/simtec"
+    />
+  </div>
 </section>

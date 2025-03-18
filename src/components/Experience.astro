@@ -4,18 +4,21 @@ const { currentLocale } = Astro;
 const i18n = geti18n({ currentLocale });
 ---
 
-<section id="experience" class="flex flex-col gap-8 lg:px-40 px-1 pt-[100px]">
-  <div class="flex flex-col gap-3">
+<section id="experience" class="flex flex-col lg:px-40 px-1 pt-[100px]">
+  <div class="flex flex-col gap-3 mb-8">
     <h2 class="font-semibold text-center capitalize text-5xl text-white">
       {i18n.EXPERIENCE_TITLE}
     </h2>
     <h3 class="font-semibold text-center fade-text">{i18n.EXPERIENCE_SUBTITLE}</h3>
   </div>
+
   <div class="flex gap-2 justify-center">
     <div class="flex flex-col items-center lg:mt-1 mt-2">
-      <div class="w-4 h-[16px] rounded-full border-2 border-neutral-1"></div>
+      <div class="w-4 h-4 rounded-full border-2 border-neutral-1"></div>
+      <div class="w-[2px] flex-1 bg-gray-500"></div>
     </div>
-    <div class="flex flex-col gap-2 max-w-[700px]">
+
+    <div class="flex flex-col gap-2 max-w-[700px] mb-8">
       <div class="flex flex-col gap-1">
         <p class="font-semibold text-xl text-white">
           {i18n.THIRD_EXPERIENCE_TITLE}
@@ -55,11 +58,15 @@ const i18n = geti18n({ currentLocale });
       </div>
     </div>
   </div>
+
   <div class="flex gap-2 justify-center">
-    <div class="flex flex-col items-center lg:mt-1 mt-2">
-      <div class="w-4 h-[16px] rounded-full border-2 border-neutral-1"></div>
+    <div class="flex flex-col items-center">
+      <div class="w-[2px] h-2 bg-gray-500"></div>
+      <div class="w-4 h-4 rounded-full border-2 border-neutral-1"></div>
+      <div class="w-[2px] flex-1 bg-gray-500"></div>
     </div>
-    <div class="flex flex-col gap-2 max-w-[700px]">
+
+    <div class="flex flex-col gap-2 max-w-[700px] mb-8">
       <div class="flex flex-col gap-1">
         <p class="font-semibold text-xl text-white">
           {i18n.SECOND_EXPERIENCE_TITLE}
@@ -82,7 +89,8 @@ const i18n = geti18n({ currentLocale });
     </div>
   </div>
   <div class="flex gap-2 justify-center">
-    <div class="flex flex-col items-center lg:mt-1 mt-2">
+    <div class="flex flex-col items-center">
+      <div class="w-[2px] h-2 bg-gray-500"></div>
       <div class="w-4 h-[16px] rounded-full border-2 border-neutral-1"></div>
     </div>
     <div class="flex flex-col gap-2 max-w-[700px]">

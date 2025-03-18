@@ -7,65 +7,65 @@ import Github from '../icons/Github.astro';
 import Linkedin from '../icons/Linkedin.astro';
 ---
 
-<section id="home" class="lg:px-40 px-1 pt-[100px]">
-	<div class="flex flex-col items-center h-full gap-5 justify-center w-auto">
-		<strong class="gray-text font-medium">Alan Meza Valenzuela</strong>
-		<h1 class="font-bold fade-text lg:text-7xl text-5xl text-center">{i18n.HOME_TITLE}</h1>
-		<div>
-			<p class="text-xl text-center text-white">
-				{i18n.HOME_DESCRIPTION}
-			</p>
-		</div>
-		<div class="flex flex-row gap-8">
-			<a href="https://github.com/AlanMezaV" title="Github" target="_blank">
-				<Github class="size-8 github" />
-			</a>
-			<a
-				href="https://www.linkedin.com/in/alan-meza-valenzuela-83a871226/"
-				title="Linkedin"
-				target="_blank"
-			>
-				<Linkedin class="size-8 linkedin" />
-			</a>
-		</div>
-		<a href={i18n.HOME_DOWNLOAD_CV_PATH} target="_blank">
-			<button class="cv_button">
-				<div class="flex flex-row gap-2 items-center px-3">
-					<Cv />
-					<span class="font-semibold text-xl text-white">{i18n.HOME_DOWNLOAD_CV}</span>
-				</div>
-			</button>
-		</a>
-	</div>
+<section id="home" class="lg:px-40 px-1 pt-[200px]">
+  <div class="flex flex-col items-center h-full gap-5 justify-center w-auto">
+    <strong class="gray-text font-medium">Alan Meza Valenzuela</strong>
+    <h1 class="font-bold fade-text lg:text-7xl text-5xl text-center">{i18n.HOME_TITLE}</h1>
+    <div>
+      <p class="text-xl text-center text-white">
+        {i18n.HOME_DESCRIPTION}
+      </p>
+    </div>
+    <div class="flex flex-row gap-8">
+      <a href="https://github.com/AlanMezaV" title="Github" target="_blank">
+        <Github class="size-8 github" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/alan-meza-valenzuela-83a871226/"
+        title="Linkedin"
+        target="_blank"
+      >
+        <Linkedin class="size-8 linkedin" />
+      </a>
+    </div>
+    <a href={i18n.HOME_DOWNLOAD_CV_PATH} target="_blank">
+      <button class="cv_button">
+        <div class="flex flex-row gap-2 items-center px-3">
+          <Cv />
+          <span class="font-semibold text-xl text-white">{i18n.HOME_DOWNLOAD_CV}</span>
+        </div>
+      </button>
+    </a>
+  </div>
 </section>
 
 <style>
-	.cv_button {
-		background-color: #0c0c0c;
-		border-width: 2px;
-		border-style: solid;
-		border-image: linear-gradient(100deg, rgba(79, 195, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
-		border-image-slice: 1;
-		color: #fff;
-		gap: 0.5rem;
-		padding: 0.5rem 1rem;
-		outline: none;
-		transition: all 0.3s ease-in;
-	}
-	.cv_button:hover {
-		border-style: solid;
-		border-width: 2px;
-		border-image: linear-gradient(270deg, rgba(79, 195, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
-		border-image-slice: 1;
-		color: #fff;
-		cursor: pointer;
-	}
-	.github:hover {
-		filter: brightness(70%);
-		cursor: pointer;
-	}
-	.linkedin:hover {
-		filter: brightness(70%);
-		cursor: pointer;
-	}
+  .cv_button {
+    background-color: #0c0c0c;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(100deg, rgba(79, 195, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    border-image-slice: 1;
+    color: #fff;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    transition: all 0.3s ease-in;
+  }
+  .cv_button:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(270deg, rgba(79, 195, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    border-image-slice: 1;
+    color: #fff;
+    cursor: pointer;
+  }
+  .github:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+  }
+  .linkedin:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+  }
 </style>
